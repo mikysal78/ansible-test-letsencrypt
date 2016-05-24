@@ -1,0 +1,7 @@
+---
+- name: Stop Nginx
+  service: name=nginx state=stopped
+- name: Ottieni o Rinnova il certificato per il dominio
+  shell: executable=/bin/bash cd /opt/certbot && ./certbot-auto certonly -m {{ letsencrypt_email }} --domains {{ letsencrypt_domain }} --agree-tos --renew-by-default --standalone --expand
+- name: Start Nginx
+  service: name=nginx state=started

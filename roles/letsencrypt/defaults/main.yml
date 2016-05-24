@@ -1,0 +1,3 @@
+---
+letsencrypt_email: admin@test.mikytux.info
+letsencrypt_domain: test.mikytux.info

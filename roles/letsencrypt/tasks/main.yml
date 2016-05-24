@@ -1,0 +1,8 @@
+---
+- include: client.yaml
+- include: cert.yaml
+- name: Stop Nginx
+  service: name=nginx state=stopped
+- template: src=../templates/default dest=/etc/nginx/sites-available/default
+- name: Start Nginx
+  service: name=nginx state=started
