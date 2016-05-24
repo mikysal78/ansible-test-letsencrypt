@@ -25,6 +25,6 @@ Editare il file hosts per impostare i server su cui andare ad installare tutto, 
 test.mikytux.info
 
 
-Lanciare tutto con:
+#### Lanciare tutto con:
 
 ansible-playbook -i hosts site.yml -l servers
