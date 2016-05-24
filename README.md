@@ -21,6 +21,7 @@ Editare le variabili presenti in
 Editare il file hosts per impostare i server su cui andare ad installare tutto, esempio
 
 `[servers]`
+
 `test.mikytux.info`
 
 
