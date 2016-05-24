@@ -1,21 +1,15 @@
-### Ansible LetsEncrypt
+# Ansible LetsEncrypt testato su Debian Jessie
 
 Installa le dipendenze per Let's Encrypt e NGINX, genera il certificato in base al dominio e copia il template per configurare nginx su ssl
 
-# I certificati si troveranno in questa path
+### I certificati si troveranno in questa path
 
-   /etc/letsencrypt/live/{{ hostname }}/cert.pem
-
-   /etc/letsencrypt/live/{{ hostname }}/privkey.pem
-
-   /etc/letsencrypt/live/{{ hostname }}/chain.pem
+* /etc/letsencrypt/live/DOMINIO.TUO/cert.pem
+* /etc/letsencrypt/live/DOMINIO.TUO/privkey.pem
+* /etc/letsencrypt/live/DOMINIO.TUO/chain.pem
 
 
-## Testato su Debian Jessie
-
-
-
-## NOTE D'USO
+### Note d'uso
 
 Editare le variabili presenti in
        roles/letsencrypt/defaults/main.yml
