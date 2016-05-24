@@ -1,0 +1,5 @@
+- hosts: servers
+  sudo: "{{ sudo | default('yes') }}"
+
+  roles:
+    - letsencrypt
